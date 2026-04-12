@@ -1,0 +1,73 @@
+{
+  "company": {
+    "name": "AutoStream",
+    "tagline": "Automated video editing tools for content creators",
+    "description": "AutoStream is a SaaS platform that provides AI-powered video editing automation, enabling content creators to produce high-quality videos faster with less manual effort."
+  },
+  "plans": [
+    {
+      "name": "Basic Plan",
+      "price_monthly": 29,
+      "price_display": "$29/month",
+      "features": [
+        "10 videos per month",
+        "720p resolution output",
+        "Basic auto-cut & trim",
+        "Standard templates",
+        "Email support (business hours)"
+      ],
+      "best_for": "Hobbyists and beginner content creators"
+    },
+    {
+      "name": "Pro Plan",
+      "price_monthly": 79,
+      "price_display": "$79/month",
+      "features": [
+        "Unlimited videos per month",
+        "4K resolution output",
+        "AI-powered captions",
+        "Advanced auto-editing with scene detection",
+        "Priority rendering queue",
+        "Custom branding & watermark removal",
+        "24/7 priority support"
+      ],
+      "best_for": "Professional creators, agencies, and YouTube/Instagram power users"
+    }
+  ],
+  "policies": [
+    {
+      "topic": "Refund Policy",
+      "detail": "No refunds are issued after 7 days from the date of purchase. Refund requests within 7 days are reviewed case-by-case."
+    },
+    {
+      "topic": "Customer Support",
+      "detail": "24/7 support is available exclusively for Pro plan subscribers. Basic plan users receive email support during business hours (Mon–Fri, 9am–6pm EST)."
+    },
+    {
+      "topic": "Video Storage",
+      "detail": "All exported videos are stored in your account for up to 30 days. Pro plan users get unlimited cloud storage."
+    },
+    {
+      "topic": "Cancellation",
+      "detail": "You can cancel your subscription at any time. Your plan remains active until the end of the billing period."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What platforms does AutoStream support for upload?",
+      "answer": "AutoStream supports direct uploads from YouTube, Instagram, TikTok, Twitch, and local file uploads (MP4, MOV, AVI)."
+    },
+    {
+      "question": "Can I try AutoStream for free?",
+      "answer": "AutoStream does not currently offer a free tier, but you can start with the Basic plan at $29/month and upgrade anytime."
+    },
+    {
+      "question": "Is there an annual plan available?",
+      "answer": "Yes! Annual subscribers save 20%. Basic Annual is $278/year and Pro Annual is $758/year."
+    },
+    {
+      "question": "What makes AI captions different?",
+      "answer": "AutoStream's AI captions use speech-to-text with 97% accuracy, auto-sync with video timestamps, and support 30+ languages."
+    }
+  ]
+}
