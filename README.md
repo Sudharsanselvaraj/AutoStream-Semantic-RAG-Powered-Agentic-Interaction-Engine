@@ -35,7 +35,6 @@
 15. [Example Conversation Flow](#15-example-conversation-flow)
 16. [Project Structure](#16-project-structure)
 17. [Evaluation Checklist](#17-evaluation-checklist)
-18. [Author](#18-author)
 
 ---
 
