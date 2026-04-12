@@ -16,7 +16,7 @@ from __future__ import annotations
 import os
 from typing import TypedDict, Literal, Optional
 
-from langchain_openai import ChatOpenAI
+from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from langgraph.graph import StateGraph, END
 
@@ -43,32 +43,30 @@ class AgentState(TypedDict):
 
 
 # ─────────────────────────────────────────────
-# 2.  LLM (Grok)
+# 2.  LLM (Claude 3 Haiku – spec-approved)
 # ─────────────────────────────────────────────
 
 def _get_llm():
-    api_key = os.getenv("GROK_API_KEY")
+    api_key = os.getenv("ANTHROPIC_API_KEY")
     if not api_key:
-        raise EnvironmentError("GROK_API_KEY not set. Add it to your .env file.")
-    return ChatOpenAI(
-        model="grok-2",
+        raise EnvironmentError("ANTHROPIC_API_KEY not set. Add it to your .env file.")
+    return ChatAnthropic(
+        model="claude-3-haiku-20240307",
         temperature=0.3,
         max_tokens=512,
-        base_url="https://api.x.ai/v1",
         api_key=api_key
     )
 
 
 def _get_summary_llm():
     """Faster/cheaper LLM for summarization."""
-    api_key = os.getenv("GROK_API_KEY")
+    api_key = os.getenv("ANTHROPIC_API_KEY")
     if not api_key:
-        raise EnvironmentError("GROK_API_KEY not set. Add it to your .env file.")
-    return ChatOpenAI(
-        model="grok-2",
+        raise EnvironmentError("ANTHROPIC_API_KEY not set. Add it to your .env file.")
+    return ChatAnthropic(
+        model="claude-3-haiku-20240307",
         temperature=0.2,
         max_tokens=256,
-        base_url="https://api.x.ai/v1",
         api_key=api_key
     )
 
